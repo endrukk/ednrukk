@@ -1,0 +1,14 @@
+example.admin:
+  title: 'Endrukk'
+  description: 'Manage endrukk settings'
+  parent: system.admin
+  route_name: endrukk.configure
+  weight: 100
+  route_parameters: { key: 'value' } #add get parameters to the menu link
+  #If menu_name is omitted, the "Tools" menu will be used.
+  menu_name: devel 
+  options: 
+    attributes:
+      class:
+        - some-class
+        - anotherclass

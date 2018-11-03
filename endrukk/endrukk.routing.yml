@@ -1,0 +1,16 @@
+endrukk.configure:
+  path: "/admin/config/endrukk"
+  defaults:
+    _form: '\Drupal\endrukk\Form\EndrukkSettingsForm'
+    _title: "Endrukk Settings"
+    _description: "Basic configuration of endrukk module"
+  requirements:
+    _permission: "administer"
+
+endrukk.list:
+  path: "/endrukk/list"
+  defaults:
+    _controller: '\Drupal\endrukk\Controller\FrontEndrukk::content'
+    _title: "Endrukk list"
+  requirements:
+    _permission: "access content"

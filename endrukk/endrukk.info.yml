@@ -1,0 +1,8 @@
+name: Endrukk
+description: Endrukk custom module
+package: Custom
+
+type: module
+core: 8.x
+
+configure: endrukk.configure
